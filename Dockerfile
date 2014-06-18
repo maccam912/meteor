@@ -16,6 +16,6 @@ RUN rm -rf $HOME/.curlrc
 
 RUN echo tlsv1 > $HOME/.curlrc
 
-RUN cd /Development && curl -v https://install.meteor.com/ | sh && cp ~/.meteor/tools/latest/launch-meteor /usr/bin/meteor
+RUN cd /Development ; curl https://install.meteor.com/ | sh ; cp ~/.meteor/tools/latest/launch-meteor /usr/bin/meteor
 
 RUN echo "Finished"
