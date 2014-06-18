@@ -12,6 +12,6 @@ RUN rm -rf /Development/node
 
 RUN npm install -g meteorite bower grunt-cli yo
 
-RUN curl -- insecure https://install.meteor.com/ | sh
+RUN cd /Development && curl -- insecure https://install.meteor.com/ | sh && cp ~/.meteor/tools/latest/launch-meteor /usr/bin/meteor
 
 RUN echo "Finished"
