@@ -2,7 +2,7 @@ FROM phusion/baseimage
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN apt-get upgrade && apt-get update -y
-RUN apt-get install git python build-essential -y
+RUN apt-get install git python build-essential wget -y
 
 RUN mkdir /Development
 RUN cd /Development && git clone git://github.com/joyent/node
