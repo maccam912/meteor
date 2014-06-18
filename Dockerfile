@@ -14,4 +14,10 @@ RUN npm install -g meteorite bower grunt-cli yo
 
 RUN cd /Development && wget -O - https://install.meteor.com/ | bash && cp ~/.meteor/tools/latest/launch-meteor /usr/bin/meteor
 
+EXPOSE 80:80
+EXPOSE 443:443
+EXPOSE 3000:3000
+
+RUN cd /Development && mrt create example-app && cd /Development/example-app && meteor &
+
 RUN echo "Finished"
