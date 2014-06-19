@@ -18,6 +18,4 @@ EXPOSE 80:80
 EXPOSE 443:443
 EXPOSE 3000:3000
 
-RUN cd /Development && mrt create example-app && cd /Development/example-app && meteor &
-
-RUN echo "Finished"
+CMD cd /Development && mrt create example-app && cd example-app && meteor &
