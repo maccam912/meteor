@@ -18,4 +18,4 @@ EXPOSE 80:80
 EXPOSE 443:443
 EXPOSE 3000:3000
 
-CMD cd /Development && mrt create example-app && cd example-app && meteor &
+RUN echo "Done. Run 'mrt create <app-name>' to create meteor app. cd into the folder created and run 'meteor' to run your webapp locally."
