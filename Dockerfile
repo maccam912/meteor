@@ -10,7 +10,7 @@ RUN cd /Development && git clone git://github.com/joyent/node
 RUN cd /Development/node && ./configure && make && make install
 RUN rm -rf /Development/node
 
-RUN npm install -g meteorite bower grunt-cli yo
+RUN npm install -g meteorite bower grunt-cli yo demeteorizer
 
 RUN cd /Development && wget -O - https://install.meteor.com/ | bash && cp ~/.meteor/tools/latest/launch-meteor /usr/bin/meteor
 
