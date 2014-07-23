@@ -14,7 +14,7 @@ RUN npm install -g meteorite bower grunt-cli yo demeteorizer
 
 RUN cd /Development && wget -O - https://install.meteor.com/ | bash && cp ~/.meteor/tools/latest/launch-meteor /usr/bin/meteor
 
-RUN curl http://j.mp/spf13-vim3 -L -o - | sh
+curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
 
 EXPOSE 80:80
 EXPOSE 443:443
