@@ -1,4 +1,4 @@
-FROM phusion/baseimage
+FROM ubuntu:latest
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN apt-get upgrade && apt-get update -y
