@@ -18,6 +18,6 @@ EXPOSE 80:80
 EXPOSE 443:443
 EXPOSE 3000:3000
 
-RUN cd /Development && wget -O - https://install.meteor.com/ | bash && cp ~/.meteor/tools/latest/launch-meteor /usr/bin/meteor
+RUN cd /Development && wget -O - https://install.meteor.com/ | bash ; cp ~/.meteor/tools/latest/launch-meteor /usr/bin/meteor
 
 RUN echo "Done. Run 'mrt create <app-name>' to create meteor app. cd into the folder created and run 'meteor' to run your webapp locally."
