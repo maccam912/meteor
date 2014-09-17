@@ -12,7 +12,7 @@ RUN rm -rf /Development/node
 
 RUN npm install -g meteorite bower grunt-cli yo demeteorizer
 
-curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+RUN curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
 
 EXPOSE 80:80
 EXPOSE 443:443
